@@ -1,0 +1,4 @@
+create database dict charset=utf8;
+create table user (id int primary key auto_increment,name varchar(32) not null,passwd varchar(128) not null);
+create table hist (id int primary key auto_increment,name varchar(32) not null,word varchar(32) not null,time varchar(64) not null);
+create table word (id int primary key auto_increment,word varchar(32),mean text);
